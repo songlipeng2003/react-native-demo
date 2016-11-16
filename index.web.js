@@ -7,7 +7,7 @@ import {
   View
 } from 'react-native';
 
-export default class Awes extends Component {
+export default class react_native_demo extends Component {
   render() {
     return (
       <View style={styles.container}>
