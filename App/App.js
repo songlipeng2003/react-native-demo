@@ -10,11 +10,17 @@ import {
 import { Button } from 'antd-mobile';
 
 const onButtonPress = () => {
-  Alert.alert('Button has been pressed!');
+  navigate('Login')
 };
 
 export default class App extends Component {
+  static navigationOptions = {
+    title: '首页',
+  };
+
   render() {
+    const { navigate } = this.props.navigation;
+
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
