@@ -4,9 +4,10 @@ import {
   StyleSheet,
   Text,
   View,
-  Button,
   Alert
 } from 'react-native';
+
+import { Button } from 'antd-mobile';
 
 const onButtonPress = () => {
   Alert.alert('Button has been pressed!');
@@ -19,7 +20,7 @@ export default class App extends Component {
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
-        <Button title="Button1" color="#841584" onPress={onButtonPress}></Button>
+        <Button type="primary" onClick={onButtonPress}>测试按钮</Button>
       </View>
     );
   }
