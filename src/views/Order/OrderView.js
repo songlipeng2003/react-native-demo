@@ -6,9 +6,9 @@ import {
 
 import { Container, Button, Text } from 'native-base';
 
-export default class OrderList extends Component {
+export default class OrderView extends Component {
   static navigationOptions = {
-    title: '订单',
+    title: '订单详情',
   };
 
   render() {
@@ -17,7 +17,7 @@ export default class OrderList extends Component {
     return (
       <Container>
         <Text>
-          OrderList
+          OrderView
         </Text>
       </Container>
     );

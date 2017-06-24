@@ -5,7 +5,7 @@ import { TabNavigator } from 'react-navigation';
 
 import Home from './views/Home';
 import Product from './views/Product';
-import OrderList from './views/OrderList';
+import Order from './views/Order';
 import My from './views/My';
 
 import './services/http'
@@ -13,7 +13,7 @@ import './services/http'
 export default SimpleApp = TabNavigator({
   Home: { screen: Home },
   Product: { screen: Product },
-  OrderList: { screen: OrderList },
+  Order: { screen: Order },
   My: { screen: My }
 }, {
   tabBarPosition: "bottom",
@@ -35,7 +35,7 @@ export default SimpleApp = TabNavigator({
           </Button>
           <Button vertical
             active={props.navigationState.index === 2}
-            onPress={() => props.navigation.navigate("OrderList")}>
+            onPress={() => props.navigation.navigate("Order")}>
             <Icon active name="navigate" />
             <Text>订单</Text>
           </Button>
