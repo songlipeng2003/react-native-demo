@@ -7,8 +7,6 @@ import {
 
 import { Container, Button, Text } from 'native-base';
 
-import TabBar from '../components/TabBar'
-
 const onButtonPress = () => {
   navigate('Login')
 };
@@ -27,8 +25,6 @@ export default class App extends Component {
           Welcome to React Native!
         </Text>
         <Button primary onPress={() => navigate('Login')}><Text>测试按钮</Text></Button>
-
-        <TabBar></TabBar>
       </Container>
     );
   }
