@@ -17,4 +17,4 @@ const SimpleApp = StackNavigator({
   Login: { screen: Login },
 });
 
-AppRegistry.registerComponent('Demo App', () => SimpleApp);
+AppRegistry.registerComponent('react_native_demo', () => SimpleApp);

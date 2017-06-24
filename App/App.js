@@ -2,12 +2,10 @@ import React, { Component } from 'react';
 
 import {
   StyleSheet,
-  Text,
-  View,
   Alert
 } from 'react-native';
 
-import { Button } from 'antd-mobile';
+import { Container, Button, Text } from 'native-base';
 
 const onButtonPress = () => {
   navigate('Login')
@@ -22,12 +20,12 @@ export default class App extends Component {
     const { navigate } = this.props.navigation;
 
     return (
-      <View style={styles.container}>
+      <Container style={styles.container}>
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
-        <Button type="primary" onClick={onButtonPress}>测试按钮</Button>
-      </View>
+        <Button primary onPress={() => navigate('Login')}><Text>测试按钮</Text></Button>
+      </Container>
     );
   }
 }
