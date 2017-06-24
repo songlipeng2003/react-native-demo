@@ -7,14 +7,6 @@ import {
   AppRegistry
 } from 'react-native';
 
-import { StackNavigator } from 'react-navigation';
+import App from './src/App';
 
-import App from './App/App';
-import Login from './App/views/Login';
-
-const SimpleApp = StackNavigator({
-  App: { screen: App },
-  Login: { screen: Login },
-});
-
-AppRegistry.registerComponent('react_native_demo', () => SimpleApp);
+AppRegistry.registerComponent('react_native_demo', () => App);
