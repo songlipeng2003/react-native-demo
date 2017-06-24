@@ -6,7 +6,7 @@ import {
 
 import { Container, Button, Text } from 'native-base';
 
-export default class My extends Component {
+export default class ProductForm extends Component {
   static navigationOptions = {
     title: '产品',
   };
@@ -17,7 +17,7 @@ export default class My extends Component {
     return (
       <Container>
         <Text>
-          ProductList
+          ProductForm
         </Text>
       </Container>
     );

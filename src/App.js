@@ -4,13 +4,15 @@ import { Container, Content, Footer, FooterTab, Button, Text, Icon } from 'nativ
 import { TabNavigator } from 'react-navigation';
 
 import Home from './views/Home';
-import ProductList from './views/ProductList';
+import Product from './views/Product';
 import OrderList from './views/OrderList';
 import My from './views/My';
 
+import './services/http'
+
 export default SimpleApp = TabNavigator({
   Home: { screen: Home },
-  ProductList: { screen: ProductList },
+  Product: { screen: Product },
   OrderList: { screen: OrderList },
   My: { screen: My }
 }, {
@@ -27,7 +29,7 @@ export default SimpleApp = TabNavigator({
           </Button>
           <Button vertical
             active={props.navigationState.index === 1}
-            onPress={() => props.navigation.navigate("ProductList")}>
+            onPress={() => props.navigation.navigate("Product")}>
             <Icon name="camera" />
             <Text>产品</Text>
           </Button>
