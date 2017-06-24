@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import axios from 'axios'
 import {
   StyleSheet
 } from 'react-native';
 import { Container, Content, List, ListItem, Thumbnail, Text, Body } from 'native-base';
+import axios from 'axios'
 
 export default class OrderList extends Component {
   constructor(props) {
@@ -31,7 +31,7 @@ export default class OrderList extends Component {
         <Content>
           <List dataArray={this.state.items}
             renderRow={(item) =>
-              <ListItem>
+              <ListItem onPress={() => navigate('OrderView', {id: item.id})}>
                 <Body>
                   <Text>{item.sn}</Text>
                   <Text note>总价:{item.totalAmount} 状态 {item.statusText}</Text>
