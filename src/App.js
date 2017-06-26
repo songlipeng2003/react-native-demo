@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { Container, Content, Footer, FooterTab, Button, Text, Icon } from 'native-base';
-
 import { TabNavigator } from 'react-navigation';
+
+import codePush from "react-native-code-push";
 
 import Home from './views/Home';
 import Product from './views/Product';
@@ -10,13 +11,13 @@ import My from './views/My';
 
 import './services/http'
 
-export default SimpleApp = TabNavigator({
+const App = TabNavigator({
   Home: { screen: Home },
   Product: { screen: Product },
   Order: { screen: Order },
   My: { screen: My }
 }, {
-  tabBarPosition: "bottom",
+  tabBarPosition: 'bottom',
   tabBarComponent: props => {
     return (
       <Footer>
@@ -50,3 +51,7 @@ export default SimpleApp = TabNavigator({
     );
   }
 });
+
+App = codePush(App)
+
+export default App

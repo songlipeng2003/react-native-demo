@@ -15,6 +15,7 @@
 		"react": "16.0.0-alpha.6",
 		"react-dom": "^15.3.2",
 		"react-native": "0.44",
+		"react-native-code-push": "^2.1.0-beta",
 		"react-navigation": "^1.0.0-beta.11",
 		"react-web": "0.4.5"
 	},
